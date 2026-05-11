@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/app_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/app_title"
+                android:textColor="#F44336"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/activities_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activities"
+                android:textAlignment="center"
+                android:textColor="#F44336"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/basic_exported_activity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:backgroundTint="#F44336"
+                android:text="@string/basic_exported_activity"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/intent_with_extras"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:backgroundTint="#F44336"
+                android:text="@string/intent_with_extras"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/intent_with_data_uri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:backgroundTint="#F44336"
+                android:text="@string/intent_with_data_uri"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/state_machine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:backgroundTint="#F44336"
+                android:text="@string/state_machine"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/intent_in_intent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:backgroundTint="#F44336"
+                android:text="@string/intent_in_intent"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/intent_redirect"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:backgroundTint="#F44336"
+                android:text="@string/intent_redirect"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/activity_lifecycle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:backgroundTint="#F44336"
+                android:text="@string/intent_lifecycle"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginVertical="16dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/activity_results_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/activity_results"
+                android:textAlignment="center"
+                android:textColor="#F44336"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/basic_activity_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:backgroundTint="#F44336"
+                android:text="@string/basic_activity_result"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/result_with_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:backgroundTint="#F44336"
+                android:text="@string/result_with_flag"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/implicit_intent_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/implicit_intents"
+                android:textAlignment="center"
+                android:textColor="#F44336"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/tricky_implicit_intent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="6dp"
+                android:backgroundTint="#F44336"
+                android:text="@string/tricky_implicit_intent"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/divider3"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/pending_intents_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/pending_intents"
+                android:textAlignment="center"
+                android:textColor="#F44336"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/mutable_pending_intent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#F44336"
+                android:text="@string/mutable_pending_intent"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/divider4"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/deeplinks_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/deeplinks"
+                android:textAlignment="center"
+                android:textColor="#F44336"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/simple_deeplink"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#F44336"
+                android:text="@string/simple_deeplink"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/intent_scheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:backgroundTint="#F44336"
+                android:text="@string/intent_scheme_deeplink"
+                android:textColor="@color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

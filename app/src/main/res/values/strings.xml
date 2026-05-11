@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Evil Intent</string>
+    <string name="app_title">Android Activity Attacks PoC</string>
+    <string name="basic_exported_activity">Basic Exported Activity</string>
+    <string name="intent_with_extras">Intent with extras</string>
+    <string name="intent_with_data_uri">Intent with data URI</string>
+    <string name="state_machine">State Machine</string>
+    <string name="intent_in_intent">Intent in intent</string>
+    <string name="intent_redirect">Intent redirect</string>
+    <string name="intent_lifecycle">Intent lifecycle</string>
+    <string name="basic_activity_result">Basic activity result</string>
+    <string name="result_with_flag">Result with flag</string>
+    <string name="tricky_implicit_intent">Tricky implicit intent</string>
+    <string name="deeplinks">Deeplinks</string>
+    <string name="simple_deeplink">Simple Deeplink</string>
+    <string name="mutable_pending_intent">Mutable Pending Intent</string>
+    <string name="pending_intents">Pending Intents</string>
+    <string name="implicit_intents">Implicit intents</string>
+    <string name="activity_results">Activity results</string>
+    <string name="activities">Activities</string>
+    <string name="intent_scheme_deeplink">Intent scheme deeplink</string>
+</resources>
